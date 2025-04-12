@@ -8,7 +8,7 @@ const CausePage = () => {
     <div className="relative flex flex-col items-center justify-start min-h-screen bg-background font-pixelated p-8">
       <h1 className="text-4xl mb-4 text-center">The Great Chrome Dinosaur Extinction Crisis</h1>
       <p className="text-lg text-center mb-8">
-        The Chrome Dinosaur, a symbol of resilience in the face of technological adversity, is now facing its greatest challenge: the relentless spread of WiFi. As internet connectivity blankets the globe, these once-proud creatures of the offline world are struggling to adapt.
+        In a world dominated by ever-present WiFi, the iconic Chrome Dinosaur faces its ultimate challenge: the relentless march of connectivity. Once symbols of offline resilience, these digital creatures are now on the brink, their natural habitat vanishing as WiFi blankets the globe.
       </p>
 
       <div className="w-full h-64 relative mb-4">
@@ -17,7 +17,7 @@ const CausePage = () => {
       </div>
 
       <p className="text-lg text-center mb-8">
-        Once roaming freely in the offline world, these majestic creatures are now cornered, their habitats shrinking as WiFi signals encroach upon their land. They represent a simpler time, a digital Stone Age if you will, where survival meant jumping over cacti and dodging pterodactyls.
+        These dinosaurs once roamed freely in the offline world, challenging players to leap over cacti and evade pterodactyls.
       </p>
 
       <p className="text-lg text-center mb-8">
@@ -95,6 +95,8 @@ const CausePage = () => {
         <li>Raise awareness about the plight of the Chrome Dinosaur.</li>
         <li>Advocate for responsible WiFi usage and signal management in Chrome Dinosaur habitats.</li>
         <li>Experience the game for yourself (turn off the wifi).</li>
+          <li>Share your high scores to inspire others.</li>
+          <li>Participate in offline activities and events to show solidarity.</li>
       </ul>
 
       <button className="bg-primary text-primary-foreground py-2 px-4 rounded-full hover:bg-primary/80">
