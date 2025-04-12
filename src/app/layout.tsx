@@ -30,7 +30,7 @@ export default function RootLayout({
         <Navbar />
         <div className="flex items-center justify-center pt-4">
           <Image
-            src="/dino-logo.png"
+            src="/pixel-dino-logo.png"
             alt="Save the Chrome Dino Logo"
             width={100}
             height={100}
@@ -42,4 +42,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 
