@@ -47,7 +47,7 @@ body {
     --teal: #008080;
   }
   .dark {
-    --background: #333;
+    --background: #1e3a8a; /* A dark blue for the night sky */
     --foreground: #f0f0f0;
     --card: #333;
     --card-foreground: #f0f0f0;
@@ -59,8 +59,8 @@ body {
     --secondary-foreground: #f0f0f0;
     --muted: #444;
     --muted-foreground: #a3a3a3;
-    --accent: #008080;
-    --accent-foreground: #f0f0f0;
+    --accent: #ffc107; /* A bright yellow for highlights */
+    --accent-foreground: #333;
     --destructive: #d11a2a;
     --destructive-foreground: #f0f0f0;
     --border: #444;
@@ -104,4 +104,29 @@ body {
 
 .font-pixelated {
   font-family: 'Pixelated', sans-serif;
+}
+
+.funky-shadow {
+  box-shadow: 3px 3px 0px #ff4081; /* Example shadow color, change as needed */
+}
+
+.wavy-underline {
+  text-decoration: underline wavy #00bcd4; /* Example underline color, change as needed */
+}
+
+.rotate-element {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.funky-border {
+  border: 2px dashed #4caf50; /* Example border color, change as needed */
 }
