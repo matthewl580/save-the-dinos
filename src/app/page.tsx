@@ -6,7 +6,7 @@ import {cn} from "@/lib/utils";
 const CausePage = () => {
   return (
     <div className="relative flex flex-col items-center justify-start min-h-screen bg-background font-pixelated p-8">
-      <h1 className="text-4xl mb-4 text-center">The Great Chrome Dinosaur Extinction Crisis</h1>
+      <h1 className="text-4xl mb-4 text-center text-primary"><b>The Great Chrome Dinosaur Extinction Crisis</b></h1>
       <p className="text-lg text-center mb-8">
         In a world dominated by ever-present WiFi, the iconic Chrome Dinosaur faces its ultimate challenge: the relentless march of connectivity. Once symbols of offline resilience, these digital creatures are now on the brink, their natural habitat vanishing as WiFi blankets the globe.
       </p>
