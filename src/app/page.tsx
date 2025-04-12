@@ -12,7 +12,7 @@ const CausePage = () => {
       </p>
 
       <div className="w-full h-64 relative mb-4">
-        <iframe src="https://chromedino.com/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+        <iframe src="https://chromedino.com/" frameBorder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
         <style dangerouslySetInnerHTML={{__html: 'iframe { position: absolute; width: 100%; height: 100%; z-index: 999; }'}} />
       </div>
 
@@ -111,4 +111,3 @@ export default function Page() {
     <CausePage/>
   );
 }
-
