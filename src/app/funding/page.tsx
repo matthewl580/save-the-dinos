@@ -6,12 +6,17 @@ import {generateDinoFact} from "@/ai/flows/generate-dino-fact";
 import {useToast} from "@/hooks/use-toast";
 import {Progress} from "@/components/ui/progress";
 
-const FundingPage = () => {
+interface FundingPageProps {
+    initialFundingGoal: number;
+    initialDonations: number;
+}
+
+const FundingPage: React.FC<FundingPageProps> = ({ initialFundingGoal, initialDonations }) => {
   const [donationIdea, setDonationIdea] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const {toast} = useToast();
-    const [fundingGoal, setFundingGoal] = useState(Math.floor(Math.random() * (50 - 5 + 1)) + 5);
-    const [donations, setDonations] = useState(Math.floor(Math.random() * (100 - 20 + 1)) + 20);
+    const [fundingGoal, setFundingGoal] = useState(initialFundingGoal);
+    const [donations, setDonations] = useState(initialDonations);
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
@@ -91,6 +96,9 @@ const FundingPage = () => {
   );
 };
 
-export default FundingPage;
+export default async function FundingPageServer() {
+    const initialFundingGoal = Math.floor(Math.random() * (50 - 5 + 1)) + 5;
+    const initialDonations = Math.floor(Math.random() * (100 - 20 + 1)) + 20;
 
-    
+    return <FundingPage initialFundingGoal={initialFundingGoal} initialDonations={initialDonations} />;
+}

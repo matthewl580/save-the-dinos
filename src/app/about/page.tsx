@@ -1,10 +1,15 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
-const AboutPage = () => {
-  const [fundingGoal, setFundingGoal] = useState(Math.floor(Math.random() * (50 - 5 + 1)) + 5);
+interface AboutPageProps {
+  initialFundingGoal: number;
+  initialDonations: number;
+}
+
+const AboutPage: React.FC<AboutPageProps> = ({ initialFundingGoal, initialDonations }) => {
+  const [fundingGoal, setFundingGoal] = useState(initialFundingGoal);
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
-  const [donations, setDonations] = useState(Math.floor(Math.random() * (100 - 20 + 1)) + 20);
+  const [donations, setDonations] = useState(initialDonations);
   const [totalDonations, setTotalDonations] = useState(0);
 
   useEffect(() => {
@@ -185,6 +190,9 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default async function AboutPageServer() {
+  const initialFundingGoal = Math.floor(Math.random() * (50 - 5 + 1)) + 5;
+  const initialDonations = Math.floor(Math.random() * (100 - 20 + 1)) + 20;
 
-    
+  return <AboutPage initialFundingGoal={initialFundingGoal} initialDonations={initialDonations} />;
+}
