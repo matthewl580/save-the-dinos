@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,6 +28,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
+        <div className="flex items-center justify-center pt-4">
+          <Image
+            src="/dino-logo.png"
+            alt="Save the Chrome Dino Logo"
+            width={100}
+            height={100}
+            className="rounded-full shadow-md"
+          />
+        </div>
         {children}
       </body>
     </html>
