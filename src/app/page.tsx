@@ -1,24 +1,20 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import {cn} from "@/lib/utils";
 
 const CausePage = () => {
   return (
-    <div className="flex flex-col items-center justify-start min-h-screen bg-background font-pixelated p-8">
+    <div className="relative flex flex-col items-center justify-start min-h-screen bg-background font-pixelated p-8">
       <h1 className="text-4xl mb-4 text-center">The Great Chrome Dinosaur Extinction Crisis</h1>
       <p className="text-lg text-center mb-8">
         The Chrome Dinosaur, a symbol of resilience in the face of technological adversity, is now facing its greatest challenge: the relentless spread of WiFi. As internet connectivity blankets the globe, these once-proud creatures of the offline world are struggling to adapt.
       </p>
 
-      <Image
-        src="/chrome-dino.png"
-        alt="Chrome Dinosaur Habitat"
-        width={800}
-        height={400}
-        className="rounded-lg shadow-md mb-4"
-      />
+      <div className="w-full h-64 relative mb-4">
+        <iframe src="https://chromedino.com/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+        <style dangerouslySetInnerHTML={{__html: 'iframe { position: absolute; width: 100%; height: 100%; z-index: 999; }'}} />
+      </div>
 
       <p className="text-lg text-center mb-8">
         Once roaming freely in the offline world, these majestic creatures are now cornered, their habitats shrinking as WiFi signals encroach upon their land. They represent a simpler time, a digital Stone Age if you will, where survival meant jumping over cacti and dodging pterodactyls.
@@ -113,5 +109,3 @@ export default function Page() {
     <CausePage/>
   );
 }
-
-    
