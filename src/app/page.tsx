@@ -13,10 +13,10 @@ const CausePage = () => {
       </p>
 
       <Image
-        src="/dino-offline.png"
+        src="https://picsum.photos/800/400"
         alt="Chrome Dinosaur Habitat"
-        width={600}
-        height={300}
+        width={800}
+        height={400}
         className="rounded-lg shadow-md mb-4"
       />
 
@@ -24,13 +24,6 @@ const CausePage = () => {
         Once roaming freely in the offline world, these majestic creatures are now cornered, their habitats shrinking as WiFi signals encroach upon their land. They represent a simpler time, a digital Stone Age if you will, where survival meant jumping over cacti and dodging pterodactyls.
       </p>
 
-      <Image
-        src="/dino-running.gif"
-        alt="Chrome Dinosaur Running"
-        width={300}
-        height={150}
-        className="rounded-lg shadow-md mb-4"
-      />
 
       <p className="text-lg text-center mb-8">
         The introduction of WiFi disrupts their natural way of life, causing confusion, disorientation, and a severe decline in their ability to thrive. Their simple, yet challenging existence is threatened by our insatiable need for connectivity.
@@ -43,12 +36,12 @@ const CausePage = () => {
       <h2 className="text-3xl mb-4 text-center">How You Can Help</h2>
       <ul className="list-disc list-inside text-lg mb-8">
         <li>Raise awareness about the plight of the Chrome Dinosaur.</li>
-        <li>Donate to support the creation of offline sanctuaries (offline gaming centers, ad-free educational resources).</li>
         <li>Advocate for responsible WiFi usage and signal management in Chrome Dinosaur habitats.</li>
+        <li>Experience the game for yourself (turn off the wifi).</li>
       </ul>
 
       <button className="bg-primary text-primary-foreground py-2 px-4 rounded-full hover:bg-primary/80">
-        Donate Now to Save the Chrome Dinosaur!
+        Turn off Wifi to save the Chrome Dinosaur
       </button>
     </div>
   );
